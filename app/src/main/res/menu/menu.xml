@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tasksFragmentMenu"
+        android:title="Tasks"
+        android:icon="@drawable/baseline_storage_24"/>
+    <item
+        android:id="@+id/doneFragmentMenu"
+        android:title="Done"
+        android:icon="@drawable/baseline_task_alt_24"/>
+    <item
+        android:id="@+id/archiveFragmentMenu"
+        android:title="Archived"
+        android:icon="@drawable/baseline_archive_24"/>
+    <item
+        android:id="@+id/SettingsFragment"
+        android:title="Settings"
+        android:icon="@drawable/baseline_settings_24"/>
+</menu>

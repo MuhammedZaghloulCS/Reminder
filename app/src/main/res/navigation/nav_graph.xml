@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/tasksFragment">
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.portfolio2.reminder.fragments.TasksFragment"
+        android:label="fragment_tasks"
+        tools:layout="@layout/fragment_tasks" >
+        <action
+            android:id="@+id/action_tasksFragment_to_doneFragment"
+            app:destination="@id/doneFragment" />
+        <action
+            android:id="@+id/action_tasksFragment_to_archive"
+            app:destination="@id/archive" />
+    </fragment>
+    <fragment
+        android:id="@+id/doneFragment"
+        android:name="com.portfolio2.reminder.fragments.DoneFragment"
+        android:label="fragment_done"
+        tools:layout="@layout/fragment_done" >
+        <action
+            android:id="@+id/action_doneFragment_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+        <action
+            android:id="@+id/action_doneFragment_to_archive"
+            app:destination="@id/archive" />
+    </fragment>
+    <fragment
+        android:id="@+id/archive"
+        android:name="com.portfolio2.reminder.fragments.ArchiveFragment"
+        android:label="fragment_archive"
+        tools:layout="@layout/fragment_archive" >
+        <action
+            android:id="@+id/action_archive_to_doneFragment"
+            app:destination="@id/doneFragment" />
+        <action
+            android:id="@+id/action_archive_to_tasksFragment"
+            app:destination="@id/tasksFragment" />
+    </fragment>
+</navigation>

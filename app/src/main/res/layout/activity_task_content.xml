@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskContentActivity"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:inputType="text"
+            android:padding="16dp" />
+
+
+
+        <!-- Calendar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/task_title"
+                    android:padding="16dp"
+                    android:text="Calendar"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/date_pick"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:src="@drawable/baseline_date_range_24"/>
+                <ImageView
+                    android:id="@+id/time_pick"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:src="@drawable/baseline_access_time_24"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/off"/>
+<!--        <DatePicker-->
+<!--            android:id="@+id/datePicker"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/textViewCalendar" />-->
+
+<!--        <TimePicker-->
+<!--            android:id="@+id/timePicker"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/datePicker" />-->
+
+        <!-- Description -->
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="Description"
+            android:gravity="top"
+            android:ellipsize="start"
+            android:inputType="textMultiLine"
+            android:padding="16dp" />
+
+</LinearLayout>
+
